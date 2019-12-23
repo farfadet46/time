@@ -1,20 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-    xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.farfatelier.minuit"
-    versionCode = "01"
-    version     = "0.1.0" >
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<widget id="com.farfatelier.minuit" version="0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>minuit</name>
+	<description>compteur avant noel</description>
+	<author>farfadet46</author>
 
-<!-- versionCode is optional and Android only -->
+	<icon src="www/icon-256.png" width="256" height="256" density="xxxhdpi" />
+	<icon src="www/icon-128.png" width="128" height="128" density="xhdpi" />
 
-  <name>Minuit</name>
+	<preference name="android-targetSdkVersion" value="28" />
 
-  <description>
-      Une app pour décompter l'heure avant minuit
-  </description>
+	<preference name="orientation" value="default" />
+	<preference name="fullscreen" value="true" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="true" />
 
-  <author email="farfadet46@gmail.com">
-      farfadet46
-  </author>
+	<config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist"><true/></config-file>
+	<config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist"><false/></config-file>
 
+
+	<preference name="deployment-target" value="10.0" />
+	<preference name="android-minSdkVersion" value="23" />
+	<access origin="*" />
+
+	<plugin name="cordova-custom-config" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-plugin-statusbar" />
+	<plugin name="cordova-plugin-whitelist" />
+	<plugin name="cordova-plugin-wkwebview-engine" />
+
+
+	<engine name="ios" />
+	<engine name="android" />
 </widget>
