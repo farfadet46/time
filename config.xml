@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.farfatelier.minuit"
+    versionCode = "01"
+    version     = "0.1.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>Minuit</name>
+
+  <description>
+      Une app pour décompter l'heure avant minuit
+  </description>
+
+  <author email="farfadet46@gmail.com">
+      farfadet46
+  </author>
+
+</widget>
